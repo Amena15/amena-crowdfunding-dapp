@@ -1,107 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Amena Crowdfunding DApp</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      line-height: 1.6;
-      background: #f7f7f7;
-      color: #222;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    pre {
-      background: #eee;
-      padding: 1rem;
-      border-radius: 4px;
-      overflow-x: auto;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+# Amena Crowdfunding DApp
 
-  <h1>Amena Crowdfunding DApp</h1>
+Amena Crowdfunding DApp is a decentralized crowdfunding platform built on the Ethereum blockchain using Solidity smart contracts. Users can securely contribute ETH to campaigns, with automatic refunds if funding goals are not met by the deadline.
 
-  <p>
-    A decentralized crowdfunding application built on Ethereum using Solidity smart contracts.
-    Users can contribute ETH to campaigns and receive refunds automatically if the funding goal is not met by the deadline.
-  </p>
+---
 
-  <h2>Features</h2>
-  <ul>
-    <li>Secure, automated ETH contributions and withdrawals</li>
-    <li>Automatic refunds if funding goals are unmet</li>
-    <li>Real-time updates in the frontend UI</li>
-    <li>MetaMask wallet integration</li>
-  </ul>
+## Features
 
-  <h2>Technologies Used</h2>
-  <ul>
-    <li>Solidity (Smart Contract)</li>
-    <li>Ethereum Blockchain</li>
-    <li>Ethers.js</li>
-    <li>MetaMask</li>
-    <li>HTML, CSS, JavaScript</li>
-  </ul>
+- Secure, automated ETH contributions and withdrawals
+- Automatic refunds if funding goals are unmet
+- Real-time frontend UI updates
+- MetaMask wallet integration
 
-  <h2>How to Run the Project</h2>
+---
 
-  <!-- Running on Mac -->
-  <h3>On Mac</h3>
-  <p>Open Terminal, then run the following commands:</p>
-  <pre>
-# Clone the repository
+## Technologies Used
+
+- **Solidity** (Smart Contracts)
+- **Ethereum Blockchain**
+- **Ethers.js**
+- **MetaMask**
+- **HTML, CSS, JavaScript**
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) (for development)
+- [Python 3](https://www.python.org/) (for running a simple HTTP server)
+- [MetaMask](https://metamask.io/) browser extension
+
+### Installation
+
+#### Clone the Repository
+
 git clone https://github.com/Amena15/amena-crowdfunding-dapp.git
 cd amena-crowdfunding-dapp
+text
 
-# Start a simple HTTP server (Python 3 required)
+#### Start the Application
+
+**On macOS/Linux:**
 python3 -m http.server 8000
+text
 
-# Open your browser and go to:
-http://localhost:8000
-  </pre>
-
-  <!-- Running on Windows -->
-  <h3>On Windows</h3>
-  <p>Open Command Prompt or PowerShell, then run:</p>
-  <pre>
-# Clone the repository
-git clone https://github.com/Amena15/amena-crowdfunding-dapp.git
-cd amena-crowdfunding-dapp
-
-# Start a simple HTTP server (Python 3 required)
+**On Windows:**
 python -m http.server 8000
+text
 
-# Open your browser and go to:
-http://localhost:8000
-  </pre>
+Then open your browser and navigate to:  
+[http://localhost:8000](http://localhost:8000)
 
-  <h2>Usage</h2>
-  <ul>
-    <li>Connect your MetaMask wallet to the DApp</li>
-    <li>View campaign details, contribute ETH</li>
-    <li>Withdraw funds if goal met or request refund if not</li>
-  </ul>
+---
 
-  <h2>Contact</h2>
-  <p>
-    Mohammed Amena Mohammed Abdulkarem<br />
-    GitHub: <a href="https://github.com/Amena15" target="_blank" rel="noopener noreferrer">https://github.com/Amena15</a>
-  </p>
+## Usage
 
-</body>
-</html>
+- Connect your MetaMask wallet to the DApp.
+- Browse available campaigns and view campaign details.
+- Contribute ETH to campaigns.
+- Withdraw funds if the funding goal is met, or request a refund if not.
+
+---
+
+Feel free to open issues or submit pull requests for improvements!
