@@ -1,5 +1,5 @@
 // Contract configuration
-const CONTRACT_ADDRESS = "0x9e71aa744f0c11364fea4a3197f53c04be62327b";    //Change to your contract address 
+const CONTRACT_ADDRESS = "0x9e71aa744f0c11364fea4a3197f53c04be62327b";    //Change based your contract address 
 const CONTRACT_ABI = [
     {
         "inputs": [
