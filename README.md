@@ -1,10 +1,10 @@
-# Amena Crowdfunding DApp
+# 💰 Amena Crowdfunding DApp
 
 Amena Crowdfunding DApp is a decentralized crowdfunding platform built on the Ethereum blockchain using Solidity smart contracts. Users can securely contribute ETH to campaigns, with automatic refunds if funding goals are not met by the deadline.
 
 ---
 
-## Features
+## ✨ Features
 
 - Secure, automated ETH contributions and withdrawals
 - Automatic refunds if funding goals are unmet
@@ -13,7 +13,7 @@ Amena Crowdfunding DApp is a decentralized crowdfunding platform built on the Et
 
 ---
 
-## Technologies Used
+##  🛠 Technologies Used
 
 - **Solidity** (Smart Contracts)
 - **Ethereum Blockchain**
@@ -23,7 +23,7 @@ Amena Crowdfunding DApp is a decentralized crowdfunding platform built on the Et
 
 ---
 
-## Getting Started
+## ⚙️ Getting Started
 
 ### Prerequisites
 
@@ -51,7 +51,7 @@ Then open your browser and navigate to:
 
 ---
 
-## Usage
+## 💡 Usage
 
 - Connect your MetaMask wallet to the DApp.
 - Browse available campaigns and view campaign details.
