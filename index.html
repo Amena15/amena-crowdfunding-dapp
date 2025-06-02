@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmenaFund DApp - Decentralized Crowdfunding Platform</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.1/ethers.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Amena Crowdfunding DApp</h1>
+            <p>Decentralized Crowdfunding Platform built on Ethereum</p>
+        </div>
+
+        <div id="errorAlert" class="alert alert-error" style="display: none;"></div>
+        <div id="successAlert" class="alert alert-success" style="display: none;"></div>
+        <div id="infoAlert" class="alert alert-info" style="display: none;"></div>
+
+        <div class="card wallet-info">
+            <h2>🔗 Wallet Connection</h2>
+            <div id="walletStatus" class="wallet-status" style="display: none;">
+                <div style="display: flex; align-items: center;">
+                    <div class="status-indicator"></div>
+                    <span>Connected: <span id="walletAddress" class="wallet-address"></span></span>
+                </div>
+                <div>
+                    <span id="walletBalance"></span> ETH
+                </div>
+            </div>
+            <button id="connectWallet" class="btn btn-primary">Connect MetaMask Wallet</button>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <h2>Campaign Status</h2>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span id="goalAmount" class="status-value">-- ETH</span>
+                        <span class="status-label">Goal Amount</span>
+                    </div>
+                    <div class="status-item">
+                        <span id="raisedAmount" class="status-value">-- ETH</span>
+                        <span class="status-label">Amount Raised</span>
+                    </div>
+                    <div class="status-item">
+                        <span id="contributorCount" class="status-value">--</span>
+                        <span class="status-label">Contributors</span>
+                    </div>
+                    <div class="status-item">
+                        <span id="timeLeft" class="status-value">--</span>
+                        <span class="status-label">Time Left</span>
+                    </div>
+                </div>
+                
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill" style="width: 0%"></div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 10px;">
+                    <span id="progressPercentage">0%</span> of goal reached
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Make Contribution</h2>
+                <div class="input-group">
+                    <label for="contributionAmount">Contribution Amount (ETH)</label>
+                    <input type="number" id="contributionAmount" step="0.01" min="0.01" placeholder="Minimum 0.01 ETH">
+                </div>
+                <button id="contributeBtn" class="btn btn-primary" disabled>
+                    <span id="contributeLoader" class="loading" style="display: none;"></span>
+                    Contribute to Campaign
+                </button>
+                
+                <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+                    <strong>Your Contribution: </strong>
+                    <span id="userContribution">0 ETH</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="ownerSection" class="card owner-section" style="display: none;">
+                <h2>Owner Functions</h2>
+                <p style="margin-bottom: 20px; color: #744210;">
+                    <strong>Welcome, Campaign Owner!</strong> You can withdraw funds once the goal is reached.
+                </p>
+                <button id="withdrawBtn" class="btn btn-success" disabled>
+                    <span id="withdrawLoader" class="loading" style="display: none;"></span>
+                    Withdraw Funds
+                </button>
+            </div>
+
+            <div class="card">
+                <h2>Refund Center</h2>
+                <p style="margin-bottom: 20px; color: #718096;">
+                    Request a refund if the campaign goal is not met after the deadline.
+                </p>
+                <button id="refundBtn" class="btn btn-danger" disabled>
+                    <span id="refundLoader" class="loading" style="display: none;"></span>
+                    Request Refund
+                </button>
+                <div id="refundInfo" style="margin-top: 15px; font-size: 0.9rem; color: #718096;"></div>                
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Recent Transactions</h2>
+            <div id="transactionHistory" class="transaction-history">
+                <p style="text-align: center; color: #718096; padding: 20px;">
+                    No transactions yet. Connect your wallet and start contributing!
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
