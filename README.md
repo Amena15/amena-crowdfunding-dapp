@@ -37,17 +37,14 @@ Amena Crowdfunding DApp is a decentralized crowdfunding platform built on the Et
 
 git clone https://github.com/Amena15/amena-crowdfunding-dapp.git
 cd amena-crowdfunding-dapp
-text
 
 #### Start the Application
 
 **On macOS/Linux:**
 python3 -m http.server 8000
-text
 
 **On Windows:**
 python -m http.server 8000
-text
 
 Then open your browser and navigate to:  
 [http://localhost:8000](http://localhost:8000)
