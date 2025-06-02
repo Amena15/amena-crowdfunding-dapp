@@ -36,6 +36,7 @@ Amena Crowdfunding DApp is a decentralized crowdfunding platform built on the Et
 #### Clone the Repository
 
 git clone https://github.com/Amena15/amena-crowdfunding-dapp.git
+
 cd amena-crowdfunding-dapp
 
 #### Start the Application
